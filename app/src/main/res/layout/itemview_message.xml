@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItemView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/standard_margin"
+    android:paddingLeft="@dimen/standard_margin"
+    android:paddingTop="@dimen/standard_margin"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+    <LinearLayout
+        android:id="@+id/vwMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_rounded_bubble_msg_me"
+        android:padding="@dimen/standard_margin_half"
+        android:gravity="left"
+        android:layout_marginBottom="@dimen/standard_margin_half"
+
+        >
+        <TextView
+            android:id="@+id/tvMeMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello world"
+            android:textColor="@android:color/white"
+            android:maxWidth="250dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/vwUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_rounded_bubble_msg_user"
+        android:padding="@dimen/standard_margin_half"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/standard_margin_half"
+        >
+        <TextView
+            android:id="@+id/tvUserMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd asdasd"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            android:maxWidth="250dp"
+            />
+    </LinearLayout>
+</LinearLayout>

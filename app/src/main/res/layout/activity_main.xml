@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/vwFooter"
+        android:scrollbars="vertical" />
+    <RelativeLayout
+        android:id="@+id/vwFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_xsmall"
+        android:fitsSystemWindows="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_toLeftOf="@id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:background="@drawable/bg_rounded_message"
+                >
+
+                <EditText
+                    android:id="@+id/etMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/msg_type_msg"
+                    android:textColorHint="#5F6670"
+                    android:inputType="text|textMultiLine"
+                    android:maxLines="3"
+                    android:padding="@dimen/standard_margin"
+                    android:textColor="@android:color/white"
+                    android:scrollbars="vertical"
+                    />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send_white_24dp"
+                android:background="@drawable/bg_rounded_send"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/standard_margin_half"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/vwDisable"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                android:background="#601D2538"
+                android:orientation="vertical"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

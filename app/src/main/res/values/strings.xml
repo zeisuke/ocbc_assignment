@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ocbc assignment</string>
+
+    <string name="msg_type_msg">Type a message</string>
+</resources>
